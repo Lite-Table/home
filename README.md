@@ -2,13 +2,18 @@
 
 Welcome to **LiteTable** — a lightweight, high-performance database access toolkit designed for developers who prefer clean SQL and native maps over heavy, bureaucratic ORMs.
 
+> 📖 **[Official Documentation](https://lite-table.github.io/docs/)**
+
 ## 🚀 The Philosophy
 
 Traditional ORMs often introduce unnecessary overhead, hidden performance traps (like N+1 queries), and heavy change-tracking magic. **LiteTable** strips away the boilerplate while keeping safety and developer experience (DX) intact.
 
 - **No Heavy Serialization:** Work directly with native arrays, maps, and primitive types.
+
 - **SQL First:** Write your own queries or use simple CRUD wrappers without losing control.
+
 - **Predictable & Fast:** Zero hidden magic. What you write is exactly what gets executed.
+
 
 ---
 
@@ -30,6 +35,7 @@ The LiteTable philosophy isn't tied to a single language. We are building a cons
 Across all implementations, LiteTable provides three fundamental building blocks:
 
 1. **`Connection / Database`**: A clean, streamlined database connection manager configured with safe defaults (prepared statements, secure character sets, and optimal error modes).
+
 2. **`Table`**: A zero-boilerplate CRUD helper for standard table operations (`find`, `all`, `insert`, `update`, `delete`).
 3. **`Query`**: A safe query executor for custom SQL statements with parameter binding returning raw objects or collections.
 
